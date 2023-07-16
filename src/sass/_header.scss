@@ -1,0 +1,78 @@
+.overlay {
+  min-height: 580px;
+  background-color: rgba(25, 28, 38, 0.2);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  min-height: 580px;
+  background-size: cover;
+  background-image: url('../images/Slider1.jpg');
+  opacity: 0.9;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  margin-top: 40px;
+  margin-left: 31px;
+}
+.burger {
+  margin-top: 48px;
+  margin-right: 31px;
+}
+
+.logo-svg {
+  fill: white;
+}
+.burger-svg {
+  fill: white;
+}
+.container-title {
+  margin-top: 113px;
+  margin-left: 27px;
+}
+
+.container-position {
+  position: relative;
+}
+.title-up {
+  padding-left: 80px;
+  margin-bottom: 20px;
+
+  color: var(--hero-title-secondary);
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.title-up::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background-color: red;
+}
+
+.title-hero {
+  margin-bottom: 20px;
+
+  color: var(--hero-title-primery);
+  font-family: 'Raleway';
+  font-size: 48px;
+  font-weight: 700;
+}
+.title-down {
+  margin-bottom: 20px;
+
+  color: var(--hero-title-secondary);
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
