@@ -49,8 +49,9 @@
   line-height: 26px;
 }
 
-.about_btn {
+.btn {
   padding: 12 20 12 20;
+  min-width: 140px;
 
   border: 1px solid var(--btn-border-primery);
   border-radius: 25px;

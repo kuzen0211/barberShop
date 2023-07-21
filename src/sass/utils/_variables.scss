@@ -1,5 +1,6 @@
 :root {
-  --hero-title-secondary: rgba(157, 164, 189, 0.6);
+  --hero-title-secondary-transparent: rgba(157, 164, 189, 0.6);
+  --hero-title-secondary: rgba(157, 164, 189, 1);
   --hero-title-primery: #fff;
 
   --title-primery: #303030;
@@ -10,4 +11,9 @@
   --btn-text-secondary: #fff;
   --btn-border-primery: #ff6c00;
   --btn-border-secondary: #fff;
+
+  --color-line: rgba(157, 164, 189, 0.6);
+  --color-text-list: #9da4bd;
+
+  --bg-card: #f7f7f7;
 }
