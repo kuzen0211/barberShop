@@ -23,7 +23,7 @@
 
   color: var(--title-primery);
   font-family: 'Raleway';
-  font-size: 28px;
+  font-size: 42px;
   font-weight: 700;
 }
 
@@ -39,8 +39,6 @@
 }
 
 .performance_list {
-  // display: flex;
-  // flex-wrap: wrap;
   margin-left: 31px;
   margin-right: 31px;
 
@@ -65,11 +63,15 @@
 }
 
 .performance_item {
-  padding: 20 35;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   background: var(--bg-card);
   width: 193px;
   height: 133px;
-
   box-sizing: border-box;
 }
 
@@ -77,4 +79,35 @@
   .performance_item_position-card {
     margin-top: 35px;
   }
+}
+
+.performance_number {
+  position: relative;
+  margin-bottom: 6px;
+
+  color: var(--title-primery);
+  font-family: 'Open Sans';
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.performance_number::after {
+  content: '+';
+
+  position: absolute;
+  top: 3px;
+
+  color: var(--accent-color);
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.performance_text-card {
+  max-width: 122px;
+
+  color: var(--title-primery);
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-weight: 600;
 }

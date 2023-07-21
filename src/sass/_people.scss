@@ -1,0 +1,90 @@
+.people {
+  padding: 84 31 84 31;
+  background-color: var(--bg-card);
+}
+
+.people_primery-title {
+  padding-left: 80px;
+  margin-bottom: 20px;
+
+  color: var(--title-primery);
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.people_primery-title::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background-color: var(--title-primery);
+}
+
+.people_secondary-title {
+  margin-bottom: 20px;
+
+  color: var(--title-primery);
+  font-family: 'Raleway';
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.people_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.people_item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.people_img {
+  max-width: 418px;
+  max-height: 346px;
+  margin-bottom: 30px;
+}
+
+.people_name {
+  margin-bottom: 8px;
+
+  color: var(--title-primery);
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.people_position {
+  margin-bottom: 30px;
+
+  color: var(--accent-color);
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--btn-bgr);
+}
+
+.social_item:not(:last-child) {
+  margin-right: 10px;
+}
