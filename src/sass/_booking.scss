@@ -1,0 +1,84 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 84 31 84 31;
+  box-sizing: border-box;
+  background: var(--bg-primery);
+}
+
+.booking_form {
+  text-align: center;
+  width: 100%;
+  min-width: 300px;
+  max-width: 418px;
+}
+
+.booking_secondary-title {
+  margin-bottom: 44px;
+
+  color: var(--hero-title-primery);
+  font-family: 'Raleway';
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.booking_input {
+  margin-bottom: 44px;
+  width: 100%;
+  min-width: 300;
+  height: 24px;
+  padding-bottom: 8px;
+
+  border: none;
+  border-bottom: 1px solid var(--input-color-placeholder);
+  background: var(--bg-primery);
+  outline: none;
+
+  color: var(--input-color-text);
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+}
+
+.booking_input::placeholder {
+  width: 418px;
+  color: var(--input-color-placeholder);
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.booking_input:focus::-webkit-input-placeholder {
+  color: var(--input-color-text);
+}
+
+.booking_input:focus,
+.booking_input:hover {
+  cursor: pointer;
+  border-bottom: 1px solid var(--input-color-text);
+}
+
+.booking_input_message {
+  resize: none;
+  overflow: hidden;
+  width: 100%;
+
+  //   height: 300px;
+
+  padding-top: 5px;
+  padding-bottom: 60px;
+}
+
+.btn_booking {
+  background-color: transparent;
+  color: var(--btn-text-secondary);
+}

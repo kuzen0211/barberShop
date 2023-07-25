@@ -1,0 +1,36 @@
+.photo_primery-title {
+  padding-left: 80px;
+  margin-bottom: 71px;
+
+  color: var(--title-primery);
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.photo_primery-title::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background-color: var(--title-primery);
+}
+
+.photo_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo_item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.photo_img {
+  max-width: 418px;
+  max-height: 360px;
+}

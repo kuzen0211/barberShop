@@ -1,9 +1,21 @@
-<section>
-  <h2>Online-booking</h2>
-  <form>
-    <label><input type="text" placeholder="Name*" /></label>
-    <label><input type="tel" placeholder="Phone*" /></label>
-    <label><input type="text" placeholder="Message" /></label>
+<section class="booking">
+  <h2 class="booking_secondary-title">Online-booking</h2>
+  <form class="booking_form">
+    <label class="booking_label">
+      <input class="booking_input" type="text" placeholder="Name*" />
+    </label>
+    <label class="booking_label">
+      <input class="booking_input" type="tel" placeholder="Phone*" />
+    </label>
+    <label class="booking_label">
+      <textarea
+        rows="10"
+        class="booking_input booking_input_message"
+        placeholder="Message"
+      ></textarea>
+    </label>
   </form>
-  <button type="button">SEND</button>
+  <div class="btn_container">
+    <button class="btn btn_price" type="button">SEND</button>
+  </div>
 </section>
