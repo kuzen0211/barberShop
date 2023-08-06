@@ -23,12 +23,17 @@
 .footer_list {
   display: flex;
   flex-direction: row;
+  width: 100%;
   padding-bottom: 50px;
   padding-left: 100px;
 }
 
-.footer_item {
+.footer_item:not(:last-child) {
   margin-right: 40px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 20px;
+  }
 }
 
 .footer_list::before {
