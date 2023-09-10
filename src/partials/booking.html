@@ -1,12 +1,14 @@
-<section class="booking">
+<section id="booking" class="booking">
   <h2 class="booking_secondary-title">Online-booking</h2>
   <form class="booking_form">
-    <label class="booking_label">
-      <input class="booking_input" type="text" placeholder="Name*" />
-    </label>
-    <label class="booking_label">
-      <input class="booking_input" type="tel" placeholder="Phone*" />
-    </label>
+    <div class="container-label">
+      <label class="booking_label booking_label_position">
+        <input class="booking_input" type="text" placeholder="Name*" />
+      </label>
+      <label class="booking_label booking_label_position">
+        <input class="booking_input" type="tel" placeholder="Phone*" />
+      </label>
+    </div>
     <label class="booking_label">
       <textarea
         rows="10"
@@ -15,7 +17,7 @@
       ></textarea>
     </label>
   </form>
-  <div>
-    <button class="btn btn_price" type="button">SEND</button>
+  <div class="btn_container">
+    <button class="btn btn_booking" type="button">SEND</button>
   </div>
 </section>

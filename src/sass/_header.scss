@@ -5,6 +5,10 @@
   @media screen and (min-width: 768px) {
     padding: 0 40 0 155;
   }
+
+  @media screen and (min-width: 1600px) {
+    padding: 0 215 0 315;
+  }
 }
 
 .header {
@@ -89,6 +93,9 @@
 .container-position_rotate {
   padding: 0;
   transform: rotate(-90deg);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .burger {
@@ -105,16 +112,24 @@
 .menu {
   display: flex;
   margin-left: 20px;
-  margin-top: 52px;
+  margin-top: 34px;
 
   list-style: none;
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 1600px) {
+    margin-left: 100px;
+    margin-top: 49px;
+  }
 }
 
 .menu_item:not(:last-child) {
   margin-right: 20px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 30px;
+  }
 }
 
 .menu_link {
@@ -145,6 +160,12 @@
 .hero {
   margin-top: 113px;
   margin-left: 31px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 156px;
+    margin-left: 98px;
+    margin-bottom: 237px;
+  }
 }
 
 .container-position {
@@ -197,10 +218,19 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 1600px) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
 
 .btn_price_position {
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 0;
+  }
 }
 
 .contact-phone {
@@ -210,4 +240,8 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1.2px;
+
+  @media screen and (min-width: 1600px) {
+    margin-right: 43px;
+  }
 }

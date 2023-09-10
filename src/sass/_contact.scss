@@ -30,6 +30,19 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 2.1px;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+.contact_content {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .contact_item:not(:last-child) {
@@ -56,6 +69,13 @@
   }
 }
 
+.contact_link_text {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .contact_icon {
   margin-right: 16px;
   width: 24px;
@@ -68,6 +88,10 @@
 
 .contact_list {
   margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 150px;
+  }
 }
 
 .contact_primery-title {
@@ -86,14 +110,14 @@
 .contact_primery-title::before {
   content: '';
   position: absolute;
-  top: 6px;
+  top: 8px;
   left: 0;
   width: 60px;
   height: 1px;
   background-color: var(--color-text-contact);
 }
 
-.contac_schedule {
+.contact_schedule {
   color: var(--color-text-contact);
   font-family: 'Open Sans';
   font-size: 18px;

@@ -106,7 +106,7 @@
 
 .btn {
   padding: 12 20 12 20;
-  max-width: 160px;
+  min-width: 160px;
 
   border: 1px solid var(--btn-border-primery);
   border-radius: 25px;
@@ -116,6 +116,7 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 9%;
+  text-transform: uppercase;
 
   &:hover,
   :focus {

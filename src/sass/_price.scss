@@ -56,12 +56,16 @@
 .price_item {
   color: var(--color-text-list);
   font-family: 'Open Sans';
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 400;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+  }
 }
 
 .line {

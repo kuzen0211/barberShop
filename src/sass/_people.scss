@@ -104,7 +104,7 @@
   align-items: center;
 }
 
-.social_item {
+.social_link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +116,12 @@
 
 .social_item:not(:last-child) {
   margin-right: 10px;
-  @media screen and (min-width: 1200px) {
-    margin-right: 0;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-right: 0;
+  // }
+}
+
+.social_link:hover,
+.social_link:focus {
+  fill: var(--accent-color);
 }
