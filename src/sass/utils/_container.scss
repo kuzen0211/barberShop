@@ -1,4 +1,25 @@
 .container {
   padding: 84 31 84 31;
   box-sizing: border-box;
+
+  @media screen and (min-width: 769px) {
+    padding: 100 39 100 39;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding: 120 315 120 255;
+  }
+}
+
+.two-columns {
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.joint-container {
+  @media screen and (min-width: 1600px) {
+    flex: 0 0 50%;
+  }
 }

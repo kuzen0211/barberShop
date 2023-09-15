@@ -3,11 +3,11 @@
   box-sizing: border-box;
   background: var(--bg-primery);
 
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   justify-content: start;
-  //   align-items: start;
-  // }
+  flex: 0 0 50%;
+
+  @media screen and (min-width: 1600px) {
+    padding: 130 0 183 215;
+  }
 }
 
 .booking_form {
@@ -59,7 +59,7 @@
 
 .booking_input {
   margin-bottom: 44px;
-  min-width: 318px;
+  width: 318px;
 
   height: 24px;
   padding-bottom: 8px;
@@ -78,13 +78,13 @@
   letter-spacing: 1.1px;
 
   @media screen and (min-width: 768px) {
-    width: 300px;
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    max-width: 270px;
   }
 }
-
-// .booking_label_position:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .booking_input::placeholder {
   min-width: 318px;
@@ -111,14 +111,46 @@
 .booking_input_message {
   resize: none;
   overflow: hidden;
-  min-width: 318px;
+  width: 100%;
 
   padding-top: 5px;
   padding-bottom: 60px;
 
+  margin-bottom: 44px;
+  width: 318px;
+
+  height: 24px;
+
+  border: none;
+  border-bottom: 1px solid var(--input-color-placeholder);
+  background: var(--bg-primery);
+  outline: none;
+
+  color: var(--input-color-text);
+  font-family: 'Open Sans';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+
   @media screen and (min-width: 768px) {
-    width: 666px;
+    width: 690px;
   }
+
+  @media screen and (min-width: 1600px) {
+    width: 570px;
+  }
+}
+
+.booking_input_message:focus,
+.booking_input_message:hover {
+  cursor: pointer;
+  border-bottom: 1px solid var(--input-color-text);
+}
+
+.booking_input_message:focus::-webkit-input-placeholder {
+  color: var(--input-color-text);
 }
 
 .btn_booking {

@@ -2,6 +2,19 @@
   @media screen and (min-width: 768px) {
     padding: 100 40 100 40;
   }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 130px;
+  }
+}
+
+.performance_content {
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
 }
 
 .performance_primery-title {
@@ -39,7 +52,7 @@
   color: var(--color-text);
 
   font-family: 'Open Sans';
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 26px;
 }
@@ -55,6 +68,10 @@
 
   grid-template-columns: repeat(2, 193px);
   gap: 30px;
+
+  @media screen and (min-width: 1600px) {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {

@@ -9,13 +9,20 @@
   background-image: url('../images/image.png');
   opacity: 0.8;
   padding: 84 31 84 31;
+  @media screen and (min-width: 768px) {
+    padding: 100 29 100 39;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding: 120 215 120 215;
+  }
 }
 
 .price_title-up {
   padding-left: 80px;
   margin-bottom: 20px;
 
-  color: var(--color-line);
+  color: var(--color-line-text);
   font-family: 'Open Sans';
   font-size: 11px;
   font-weight: 600;
@@ -28,7 +35,7 @@
   left: 0;
   width: 60px;
   height: 1px;
-  background-color: var(--color-line);
+  background-color: var(--color-line-text);
 }
 
 .price_title {
@@ -42,6 +49,9 @@
 }
 
 .price_list {
+  display: flex;
+  flex-wrap: wrap;
+
   padding: 30 20 30 40;
   margin-bottom: 44px;
 
@@ -54,6 +64,7 @@
 }
 
 .price_item {
+  flex: 0 0 100%;
   color: var(--color-text-list);
   font-family: 'Open Sans';
   font-size: 9px;
@@ -61,17 +72,21 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   @media screen and (min-width: 480px) {
     font-size: 14px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    flex: 0 0 calc(50% - 30px);
+    margin-right: 30px;
   }
 }
 
 .line {
   flex-grow: 1;
   margin-top: 10px;
-  border-bottom: 1px solid var(--color-text-list);
+  border-bottom: 1px solid var(--color-line);
   margin-left: 4px;
   margin-right: 4px;
 }
